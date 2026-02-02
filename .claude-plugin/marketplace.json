@@ -1,0 +1,20 @@
+{
+  "name": "ossystems",
+  "owner": {
+    "name": "OS Systems"
+  },
+  "metadata": {
+    "description": "OS Systems company-wide development tools and standards",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "ossystems",
+      "source": "./..",
+      "description": "OS Systems company-wide development tools and standards",
+      "version": "1.0.0",
+      "category": "productivity",
+      "keywords": ["commit", "conventional-commits", "refactoring", "documentation"]
+    }
+  ]
+}
