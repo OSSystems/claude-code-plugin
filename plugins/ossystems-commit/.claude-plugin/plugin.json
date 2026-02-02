@@ -1,0 +1,12 @@
+{
+  "name": "ossystems-commit",
+  "description": "Create conventional commits for staged changes",
+  "version": "1.0.0",
+  "author": {
+    "name": "OS Systems"
+  },
+  "repository": "https://github.com/OSSystems/claude-code-plugin",
+  "homepage": "https://github.com/OSSystems/claude-code-plugin",
+  "license": "MIT",
+  "keywords": ["commit", "conventional-commits", "git"]
+}

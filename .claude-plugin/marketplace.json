@@ -1,0 +1,26 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ossystems",
+  "version": "1.0.0",
+  "description": "OS Systems company-wide development tools and standards for Claude Code",
+  "owner": {
+    "name": "OS Systems"
+  },
+  "metadata": {
+    "description": "OS Systems company-wide development tools and standards"
+  },
+  "plugins": [
+    {
+      "name": "ossystems-commit",
+      "source": "./plugins/ossystems-commit",
+      "description": "Create conventional commits for staged changes",
+      "category": "productivity"
+    },
+    {
+      "name": "ossystems-refactor-claude-md",
+      "source": "./plugins/ossystems-refactor-claude-md",
+      "description": "Refactor CLAUDE.md files following progressive disclosure principles",
+      "category": "productivity"
+    }
+  ]
+}
