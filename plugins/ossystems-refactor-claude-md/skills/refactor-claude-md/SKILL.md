@@ -34,3 +34,7 @@ Follow these steps:
    - Redundant (the agent already knows this)
    - Too vague to be actionable
    - Overly obvious (like "write clean code")
+
+## Reference
+
+Based on [A Complete Guide to AGENTS.md](https://www.aihero.dev/a-complete-guide-to-agents-md).
