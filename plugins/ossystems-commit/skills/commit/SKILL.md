@@ -1,6 +1,6 @@
 ---
-description: Create a conventional commit for staged changes
-disable-model-invocation: true
+name: Conventional Commit
+description: This skill should be used when the user asks to "commit", "commit these changes", "commit staged files", "make a commit", "create a commit", or "write a commit message". Drafts a Conventional Commits-formatted message from staged changes and creates the commit.
 context: fork
 agent: general-purpose
 model: opus
