@@ -1,7 +1,7 @@
 {
   "name": "ossystems-refactor-claude-md",
   "description": "Refactor CLAUDE.md files following progressive disclosure principles",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "OS Systems"
   },
