@@ -1,5 +1,5 @@
 ---
-name: Conventional Commit
+name: commit
 description: This skill should be used when the user asks to "commit", "commit these changes", "commit staged files", "make a commit", "create a commit", or "write a commit message". Drafts a Conventional Commits-formatted message from staged changes and creates the commit, preferring to amend or fixup into an existing commit on unpublished branches where the changes logically belong.
 context: fork
 agent: general-purpose
@@ -7,7 +7,7 @@ model: opus
 allowed-tools: Bash(git diff:*), Bash(git status:*), Bash(git log:*), Bash(git blame:*), Bash(git add:*), Bash(git reset:*), Bash(git restore:*), Bash(git commit:*), Bash(git rebase:*), Bash(git rev-parse:*), Bash(git config:*), Bash(git branch:*), AskUserQuestion
 ---
 
-# Conventional Commit
+# commit
 
 Create a commit for staged changes. On unpublished branches, prefer to amend or squash into the commit the changes logically belong to, rather than stacking a new commit that pollutes history.
 
