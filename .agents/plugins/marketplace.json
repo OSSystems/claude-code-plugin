@@ -1,0 +1,32 @@
+{
+  "name": "ossystems",
+  "interface": {
+    "displayName": "OS Systems"
+  },
+  "plugins": [
+    {
+      "name": "ossystems-commit",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ossystems-commit"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "ossystems-refactor-agent-instructions",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ossystems-refactor-agent-instructions"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

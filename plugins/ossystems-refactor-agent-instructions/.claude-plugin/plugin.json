@@ -1,6 +1,6 @@
 {
-  "name": "ossystems-commit",
-  "description": "Create conventional commits for staged changes",
+  "name": "ossystems-refactor-agent-instructions",
+  "description": "Refactor agent instruction files following progressive disclosure principles",
   "version": "2.0.0",
   "author": {
     "name": "OS Systems"
@@ -9,8 +9,9 @@
   "homepage": "https://github.com/OSSystems/ai-plugins",
   "license": "MIT",
   "keywords": [
-    "commit",
-    "conventional-commits",
-    "git"
+    "agents-md",
+    "claude-md",
+    "documentation",
+    "refactoring"
   ]
 }

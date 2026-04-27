@@ -1,0 +1,15 @@
+{
+  "name": "ossystems",
+  "version": "2.0.0",
+  "description": "OS Systems company-wide development tools and standards for agent harnesses",
+  "owner": {
+    "name": "OS Systems"
+  },
+  "interface": {
+    "displayName": "OS Systems"
+  },
+  "plugins": [
+    "ossystems-commit",
+    "ossystems-refactor-agent-instructions"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "ossystems-commit",
+  "description": "Create conventional commits for staged changes",
+  "version": "2.0.0",
+  "author": {
+    "name": "OS Systems"
+  },
+  "repository": "https://github.com/OSSystems/ai-plugins",
+  "homepage": "https://github.com/OSSystems/ai-plugins",
+  "license": "MIT",
+  "keywords": ["commit", "conventional-commits", "git"],
+  "category": "Productivity",
+  "publishTo": {
+    "claude": true,
+    "codex": true
+  },
+  "codexInterface": {
+    "displayName": "OS Systems Commit",
+    "shortDescription": "Create or amend conventional commits from staged changes.",
+    "longDescription": "Reviews staged git changes and chooses whether to create, split, amend, or fix up a commit while preserving clean project history.",
+    "developerName": "OS Systems",
+    "capabilities": ["Interactive", "Write"],
+    "defaultPrompt": [
+      "Commit my staged changes.",
+      "Write a conventional commit for the staged diff.",
+      "Decide whether these staged changes should amend HEAD."
+    ]
+  },
+  "skills": [
+    {
+      "name": "commit",
+      "description": "Use when the user asks to commit staged changes or draft a commit message.",
+      "source": "commit.md",
+      "title": "commit"
+    }
+  ]
+}

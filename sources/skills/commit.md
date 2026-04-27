@@ -1,10 +1,3 @@
----
-name: commit
-description: Use when the user asks to commit staged changes or draft a commit message.
----
-
-# commit
-
 Create a commit for staged changes. On unpublished branches, prefer to amend or squash into the
 commit the changes logically belong to instead of stacking a new commit that pollutes history.
 
@@ -90,3 +83,4 @@ If a rebase stops on a conflict, stop and surface the conflict instead of forcin
 - Wrap lines at 100 columns.
 - Focus on rationale rather than diff narration.
 - Use prose, bullets, or a mix.
+

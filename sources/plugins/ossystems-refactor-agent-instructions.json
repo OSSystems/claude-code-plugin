@@ -1,0 +1,37 @@
+{
+  "name": "ossystems-refactor-agent-instructions",
+  "description": "Refactor agent instruction files following progressive disclosure principles",
+  "version": "2.0.0",
+  "author": {
+    "name": "OS Systems"
+  },
+  "repository": "https://github.com/OSSystems/ai-plugins",
+  "homepage": "https://github.com/OSSystems/ai-plugins",
+  "license": "MIT",
+  "keywords": ["agents-md", "claude-md", "documentation", "refactoring"],
+  "category": "Productivity",
+  "publishTo": {
+    "claude": true,
+    "codex": true
+  },
+  "codexInterface": {
+    "displayName": "OS Systems Instruction Refactor",
+    "shortDescription": "Refactor AGENTS.md and legacy CLAUDE.md files.",
+    "longDescription": "Restructures agent instruction files into a minimal root document plus focused supporting documents using progressive disclosure.",
+    "developerName": "OS Systems",
+    "capabilities": ["Interactive", "Write"],
+    "defaultPrompt": [
+      "Refactor this AGENTS.md file.",
+      "Split these agent instructions into a minimal root file and linked docs.",
+      "Clean up conflicting instructions in CLAUDE.md and AGENTS.md."
+    ]
+  },
+  "skills": [
+    {
+      "name": "refactor-agent-instructions",
+      "description": "Use when the user wants to refactor AGENTS.md, CLAUDE.md, or similar agent instruction files.",
+      "source": "refactor-agent-instructions.md",
+      "title": "Refactor Agent Instructions"
+    }
+  ]
+}

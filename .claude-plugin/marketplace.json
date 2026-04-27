@@ -1,8 +1,8 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "ossystems",
-  "version": "1.1.1",
-  "description": "OS Systems company-wide development tools and standards for Claude Code",
+  "version": "2.0.0",
+  "description": "OS Systems company-wide development tools and standards for agent harnesses",
   "owner": {
     "name": "OS Systems"
   },
@@ -17,9 +17,9 @@
       "category": "productivity"
     },
     {
-      "name": "ossystems-refactor-claude-md",
-      "source": "./plugins/ossystems-refactor-claude-md",
-      "description": "Refactor CLAUDE.md files following progressive disclosure principles",
+      "name": "ossystems-refactor-agent-instructions",
+      "source": "./plugins/ossystems-refactor-agent-instructions",
+      "description": "Refactor agent instruction files following progressive disclosure principles",
       "category": "productivity"
     }
   ]

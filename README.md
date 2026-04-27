@@ -1,48 +1,88 @@
-# OS Systems Claude Code Plugins
+# OS Systems Agent Plugins
 
-Company-wide development tools and standards for Claude Code.
+Company-wide development tools and standards for Claude Code, Codex, and future agent harnesses.
 
-## Marketplace
+This repository now keeps plugin behavior in shared source files and generates harness-specific
+artifacts for each supported runtime.
 
-Add the marketplace and install all plugins:
+## Layout
+
+- `sources/plugins/`: canonical plugin metadata
+- `sources/skills/`: canonical skill instructions
+- `plugins/*/.claude-plugin/`: generated Claude manifests
+- `plugins/*/.codex-plugin/`: generated Codex manifests
+- `.claude-plugin/marketplace.json`: generated Claude marketplace
+- `.agents/plugins/marketplace.json`: generated Codex marketplace
+
+## Generate Artifacts
+
+```bash
+make generate-plugins
 ```
-/plugin marketplace add OSSystems/claude-code-plugin
+
+## Validate Artifacts
+
+```bash
+make validate-plugins
 ```
 
-Or browse individual plugins below.
+## Claude Code
+
+Add the marketplace:
+
+```bash
+/plugin marketplace add OSSystems/ai-plugins
+```
+
+Install individual plugins directly:
+
+```bash
+/plugin install ossystems-commit@ossystems
+/plugin install ossystems-refactor-agent-instructions@ossystems
+```
+
+These Claude Code commands are still valid. Anthropic's current plugin documentation and plugin
+announcement still describe the `/plugin marketplace add` and `/plugin install` flow.
+
+## Codex
+
+Add the marketplace from the command line:
+
+```bash
+codex plugin marketplace add OSSystems/ai-plugins
+```
+
+The current local Codex CLI also accepts a local checkout as the marketplace source:
+
+```bash
+codex plugin marketplace add /absolute/path/to/ai-plugins
+```
+
+The generated Codex marketplace file lives at:
+
+```text
+.agents/plugins/marketplace.json
+```
+
+After adding the marketplace, install plugins from inside the Codex CLI interactive `/plugin`
+flow. The current Codex CLI on this machine exposes `codex plugin marketplace add`, but it does not
+expose a standalone non-interactive `codex plugin install` subcommand.
+
+Available Codex plugins:
+
+- `ossystems-commit`
+- `ossystems-refactor-agent-instructions`
 
 ## Plugins
 
 ### ossystems-commit
 
-Create conventional commits for staged changes.
+Creates conventional commits for staged changes.
 
-**Installation:**
-```
-/plugin install ossystems-commit@ossystems
-```
+### ossystems-refactor-agent-instructions
 
-**Skill:** `/commit`
-- Analyzes staged changes with `git diff --cached`
-- Generates commit messages following [Conventional Commits](https://www.conventionalcommits.org/) format
-- Writes clear, user-facing descriptions (≤100 columns)
-- Includes a body explaining the reasoning behind changes
-
-### ossystems-refactor-claude-md
-
-Refactor CLAUDE.md files following progressive disclosure principles.
-
-**Installation:**
-```
-/plugin install ossystems-refactor-claude-md@ossystems
-```
-
-**Skill:** `/refactor-claude-md`
-- Identifies contradictions in existing instructions
-- Extracts only essential info for the root CLAUDE.md
-- Groups remaining instructions into logical categories
-- Creates a modular file structure with linked documentation
-- Flags redundant or overly vague instructions for deletion
+Refactors agent instruction files such as `AGENTS.md` and legacy `CLAUDE.md` using progressive
+disclosure.
 
 ## License
 
